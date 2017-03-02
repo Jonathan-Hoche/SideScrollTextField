@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4114B4A61E65DB9800E84280 /* Example1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114B4A51E65DB9800E84280 /* Example1VC.swift */; };
+		4114B4A81E65F4AC00E84280 /* Example2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114B4A71E65F4AC00E84280 /* Example2VC.swift */; };
+		4114B4AA1E65FA7500E84280 /* Example3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114B4A91E65FA7500E84280 /* Example3VC.swift */; };
+		4114B4AC1E65FB4A00E84280 /* Example4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114B4AB1E65FB4A00E84280 /* Example4VC.swift */; };
+		4114B4AE1E65FB5E00E84280 /* Example5VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4114B4AD1E65FB5E00E84280 /* Example5VC.swift */; };
+		415731841E65D51600E1AE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415731831E65D51600E1AE17 /* AppDelegate.swift */; };
+		415731891E65D51600E1AE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415731871E65D51600E1AE17 /* Main.storyboard */; };
+		4157318B1E65D51600E1AE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4157318A1E65D51600E1AE17 /* Assets.xcassets */; };
+		4157318E1E65D51600E1AE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4157318C1E65D51600E1AE17 /* LaunchScreen.storyboard */; };
+		4157319A1E65D5CA00E1AE17 /* SideScrollTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415731991E65D5CA00E1AE17 /* SideScrollTextField.swift */; };
+		4157319E1E65D67800E1AE17 /* PlaceIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157319C1E65D67800E1AE17 /* PlaceIn.swift */; };
+		4157319F1E65D67800E1AE17 /* PlaceOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4157319D1E65D67800E1AE17 /* PlaceOn.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4114B4A51E65DB9800E84280 /* Example1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example1VC.swift; sourceTree = "<group>"; };
+		4114B4A71E65F4AC00E84280 /* Example2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example2VC.swift; sourceTree = "<group>"; };
+		4114B4A91E65FA7500E84280 /* Example3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example3VC.swift; sourceTree = "<group>"; };
+		4114B4AB1E65FB4A00E84280 /* Example4VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example4VC.swift; sourceTree = "<group>"; };
+		4114B4AD1E65FB5E00E84280 /* Example5VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example5VC.swift; sourceTree = "<group>"; };
+		415731801E65D51600E1AE17 /* JHSideScrollTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHSideScrollTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		415731831E65D51600E1AE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		415731881E65D51600E1AE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4157318A1E65D51600E1AE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4157318D1E65D51600E1AE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4157318F1E65D51600E1AE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415731991E65D5CA00E1AE17 /* SideScrollTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideScrollTextField.swift; sourceTree = "<group>"; };
+		4157319C1E65D67800E1AE17 /* PlaceIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceIn.swift; sourceTree = "<group>"; };
+		4157319D1E65D67800E1AE17 /* PlaceOn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceOn.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4157317D1E65D51600E1AE17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		415731771E65D51600E1AE17 = {
+			isa = PBXGroup;
+			children = (
+				415731821E65D51600E1AE17 /* JHSideScrollTextField */,
+				415731811E65D51600E1AE17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		415731811E65D51600E1AE17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				415731801E65D51600E1AE17 /* JHSideScrollTextField.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		415731821E65D51600E1AE17 /* JHSideScrollTextField */ = {
+			isa = PBXGroup;
+			children = (
+				415731981E65D57F00E1AE17 /* JHSideScrollTextField */,
+				415731961E65D56200E1AE17 /* View */,
+				415731971E65D56E00E1AE17 /* Controller */,
+				415731951E65D52D00E1AE17 /* Supporting Files */,
+			);
+			path = JHSideScrollTextField;
+			sourceTree = "<group>";
+		};
+		415731951E65D52D00E1AE17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				415731831E65D51600E1AE17 /* AppDelegate.swift */,
+				4157318A1E65D51600E1AE17 /* Assets.xcassets */,
+				4157318C1E65D51600E1AE17 /* LaunchScreen.storyboard */,
+				4157318F1E65D51600E1AE17 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		415731961E65D56200E1AE17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				415731871E65D51600E1AE17 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		415731971E65D56E00E1AE17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4114B4A51E65DB9800E84280 /* Example1VC.swift */,
+				4114B4A71E65F4AC00E84280 /* Example2VC.swift */,
+				4114B4A91E65FA7500E84280 /* Example3VC.swift */,
+				4114B4AB1E65FB4A00E84280 /* Example4VC.swift */,
+				4114B4AD1E65FB5E00E84280 /* Example5VC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		415731981E65D57F00E1AE17 /* JHSideScrollTextField */ = {
+			isa = PBXGroup;
+			children = (
+				4157319B1E65D66500E1AE17 /* Extensions */,
+				415731991E65D5CA00E1AE17 /* SideScrollTextField.swift */,
+			);
+			name = JHSideScrollTextField;
+			sourceTree = "<group>";
+		};
+		4157319B1E65D66500E1AE17 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4157319C1E65D67800E1AE17 /* PlaceIn.swift */,
+				4157319D1E65D67800E1AE17 /* PlaceOn.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4157317F1E65D51600E1AE17 /* JHSideScrollTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 415731921E65D51600E1AE17 /* Build configuration list for PBXNativeTarget "JHSideScrollTextField" */;
+			buildPhases = (
+				4157317C1E65D51600E1AE17 /* Sources */,
+				4157317D1E65D51600E1AE17 /* Frameworks */,
+				4157317E1E65D51600E1AE17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JHSideScrollTextField;
+			productName = JHSideScrollTextField;
+			productReference = 415731801E65D51600E1AE17 /* JHSideScrollTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		415731781E65D51600E1AE17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jonathan Hoche";
+				TargetAttributes = {
+					4157317F1E65D51600E1AE17 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 3NBMT4652B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4157317B1E65D51600E1AE17 /* Build configuration list for PBXProject "JHSideScrollTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 415731771E65D51600E1AE17;
+			productRefGroup = 415731811E65D51600E1AE17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4157317F1E65D51600E1AE17 /* JHSideScrollTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4157317E1E65D51600E1AE17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4157318E1E65D51600E1AE17 /* LaunchScreen.storyboard in Resources */,
+				4157318B1E65D51600E1AE17 /* Assets.xcassets in Resources */,
+				415731891E65D51600E1AE17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4157317C1E65D51600E1AE17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4157319E1E65D67800E1AE17 /* PlaceIn.swift in Sources */,
+				4114B4AE1E65FB5E00E84280 /* Example5VC.swift in Sources */,
+				4114B4A61E65DB9800E84280 /* Example1VC.swift in Sources */,
+				415731841E65D51600E1AE17 /* AppDelegate.swift in Sources */,
+				4157319F1E65D67800E1AE17 /* PlaceOn.swift in Sources */,
+				4114B4AC1E65FB4A00E84280 /* Example4VC.swift in Sources */,
+				4114B4A81E65F4AC00E84280 /* Example2VC.swift in Sources */,
+				4114B4AA1E65FA7500E84280 /* Example3VC.swift in Sources */,
+				4157319A1E65D5CA00E1AE17 /* SideScrollTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		415731871E65D51600E1AE17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				415731881E65D51600E1AE17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4157318C1E65D51600E1AE17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4157318D1E65D51600E1AE17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		415731901E65D51600E1AE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		415731911E65D51600E1AE17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		415731931E65D51600E1AE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NBMT4652B;
+				INFOPLIST_FILE = JHSideScrollTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JH.JHSideScrollTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		415731941E65D51600E1AE17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3NBMT4652B;
+				INFOPLIST_FILE = JHSideScrollTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JH.JHSideScrollTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4157317B1E65D51600E1AE17 /* Build configuration list for PBXProject "JHSideScrollTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415731901E65D51600E1AE17 /* Debug */,
+				415731911E65D51600E1AE17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		415731921E65D51600E1AE17 /* Build configuration list for PBXNativeTarget "JHSideScrollTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				415731931E65D51600E1AE17 /* Debug */,
+				415731941E65D51600E1AE17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 415731781E65D51600E1AE17 /* Project object */;
+}

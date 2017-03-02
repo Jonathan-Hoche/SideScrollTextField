@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ei7-Cl-pHm">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example 2-->
+        <scene sceneID="X1C-kW-kDo">
+            <objects>
+                <viewController id="Dxd-d7-s4D" customClass="Example2VC" customModule="JHSideScrollTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fy5-z4-uxA"/>
+                        <viewControllerLayoutGuide type="bottom" id="xc1-1w-HEA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xpr-Ie-fLU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maxFontSize=17 / minFontSize=10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsL-uf-gdN">
+                                <rect key="frame" x="28.5" y="25" width="263" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scrollOnlyWhenTooLong=true" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Py-cQ-Rhk">
+                                <rect key="frame" x="46.5" y="191" width="227" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNj-sb-GzZ" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="51" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BbQ-5H-7hp"/>
+                                    <constraint firstAttribute="height" constant="30" id="zuv-UH-WaR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFontSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZW-ul-7hx" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="110" y="86" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cEG-k2-Smw"/>
+                                    <constraint firstAttribute="height" constant="30" id="kIg-p9-WKy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFontSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkT-Lw-Bme" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="135" y="121" width="50" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="udW-Xv-OEd"/>
+                                    <constraint firstAttribute="width" constant="50" id="x2C-Yq-tav"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFontSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oB6-MA-xhT">
+                                <rect key="frame" x="137" y="396" width="47" height="30"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startAction:" destination="Dxd-d7-s4D" eventType="touchUpInside" id="YXs-Ln-Qeg"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="974-JN-ARE" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="217" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6em-O9-8f9"/>
+                                    <constraint firstAttribute="width" constant="200" id="GAr-ZE-n2l"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFontSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollOnlyWhenTooLong" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcn-2Z-3ig" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="110" y="322" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HFM-FM-tNr"/>
+                                    <constraint firstAttribute="width" constant="100" id="nFA-kG-4wA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFontSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollOnlyWhenTooLong" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAp-eH-qQg" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="135" y="357" width="50" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7IT-z1-wi3"/>
+                                    <constraint firstAttribute="width" constant="50" id="94v-Af-Ghq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFontSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollOnlyWhenTooLong" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I1-v7-ODq" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="252" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="hKS-e3-fEI"/>
+                                    <constraint firstAttribute="height" constant="30" id="jwI-Ge-Xgc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You Doing?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFontSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollOnlyWhenTooLong" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-h6-e2I" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="287" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6SV-26-2ZF"/>
+                                    <constraint firstAttribute="width" constant="200" id="I1x-w5-WzX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You Doing These Days? "/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxFontSize">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollOnlyWhenTooLong" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LAp-eH-qQg" firstAttribute="top" secondItem="rcn-2Z-3ig" secondAttribute="bottom" constant="5" id="2Md-fY-3Sn"/>
+                            <constraint firstItem="xc1-1w-HEA" firstAttribute="top" secondItem="oB6-MA-xhT" secondAttribute="bottom" constant="5" id="7KP-75-AVS"/>
+                            <constraint firstItem="yZW-ul-7hx" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="BCf-ig-cy4"/>
+                            <constraint firstItem="1I1-v7-ODq" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="Eda-37-rzD"/>
+                            <constraint firstItem="oB6-MA-xhT" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="G7b-hj-OEE"/>
+                            <constraint firstItem="974-JN-ARE" firstAttribute="top" secondItem="4Py-cQ-Rhk" secondAttribute="bottom" constant="5" id="KM9-Zp-rrG"/>
+                            <constraint firstItem="1I1-v7-ODq" firstAttribute="top" secondItem="974-JN-ARE" secondAttribute="bottom" constant="5" id="Lqf-qI-3lO"/>
+                            <constraint firstItem="gLi-h6-e2I" firstAttribute="top" secondItem="1I1-v7-ODq" secondAttribute="bottom" constant="5" id="Lrz-Pa-6hW"/>
+                            <constraint firstItem="974-JN-ARE" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="NgO-t0-T9n"/>
+                            <constraint firstItem="ZsL-uf-gdN" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="ZYg-8P-BSP"/>
+                            <constraint firstItem="hkT-Lw-Bme" firstAttribute="top" secondItem="yZW-ul-7hx" secondAttribute="bottom" constant="5" id="a9u-Nb-zK5"/>
+                            <constraint firstItem="4Py-cQ-Rhk" firstAttribute="top" secondItem="hkT-Lw-Bme" secondAttribute="bottom" constant="40" id="b64-hv-fBd"/>
+                            <constraint firstItem="4Py-cQ-Rhk" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="bSZ-8o-c2X"/>
+                            <constraint firstItem="ZsL-uf-gdN" firstAttribute="top" secondItem="Fy5-z4-uxA" secondAttribute="bottom" constant="5" id="bxR-3Q-e6z"/>
+                            <constraint firstItem="rcn-2Z-3ig" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="dwi-yF-5pI"/>
+                            <constraint firstItem="hNj-sb-GzZ" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="fEo-A5-wev"/>
+                            <constraint firstItem="gLi-h6-e2I" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="fe9-5G-2D1"/>
+                            <constraint firstItem="yZW-ul-7hx" firstAttribute="top" secondItem="hNj-sb-GzZ" secondAttribute="bottom" constant="5" id="g6b-Mx-1MK"/>
+                            <constraint firstItem="rcn-2Z-3ig" firstAttribute="top" secondItem="gLi-h6-e2I" secondAttribute="bottom" constant="5" id="ghF-2M-5Js"/>
+                            <constraint firstItem="LAp-eH-qQg" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="nDE-6e-F2G"/>
+                            <constraint firstItem="hkT-Lw-Bme" firstAttribute="centerX" secondItem="xpr-Ie-fLU" secondAttribute="centerX" id="osd-fI-HuC"/>
+                            <constraint firstItem="hNj-sb-GzZ" firstAttribute="top" secondItem="ZsL-uf-gdN" secondAttribute="bottom" constant="5" id="vus-DP-4Ob"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Example 2" id="h5u-bb-mTI"/>
+                    <connections>
+                        <outlet property="max1" destination="hNj-sb-GzZ" id="BT0-Xi-JG2"/>
+                        <outlet property="max2" destination="yZW-ul-7hx" id="nbT-1o-TvD"/>
+                        <outlet property="max3" destination="hkT-Lw-Bme" id="Mu6-1i-mPu"/>
+                        <outlet property="whenLong1" destination="974-JN-ARE" id="TEZ-mh-fzr"/>
+                        <outlet property="whenLong2" destination="1I1-v7-ODq" id="bOY-jp-3oV"/>
+                        <outlet property="whenLong3" destination="gLi-h6-e2I" id="r1m-5U-3e6"/>
+                        <outlet property="whenLong4" destination="rcn-2Z-3ig" id="RDz-2u-iy9"/>
+                        <outlet property="whenLong5" destination="LAp-eH-qQg" id="j1R-c8-iGj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZa-m7-wPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.375" y="15"/>
+        </scene>
+        <!--Example 4-->
+        <scene sceneID="Rt4-vJ-HwL">
+            <objects>
+                <viewController id="HsC-F0-Dnp" customClass="Example4VC" customModule="JHSideScrollTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dFY-RV-h8b"/>
+                        <viewControllerLayoutGuide type="bottom" id="1sC-Yd-7Zp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2fo-7N-5tc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGf-g4-L7e">
+                                <rect key="frame" x="137" y="396" width="47" height="30"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startAction:" destination="HsC-F0-Dnp" eventType="touchUpInside" id="8md-9g-khO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delayAtStart=5 / delayAtEnd=5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9c-7J-jxX">
+                                <rect key="frame" x="43" y="25" width="235" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93x-fT-aDh" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="51" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="noJ-vX-pFz"/>
+                                    <constraint firstAttribute="height" constant="30" id="xMg-El-hK2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayAtStart">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayAtEnd">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="startOutOfBounds=true" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNJ-Qi-d9m">
+                                <rect key="frame" x="69" y="106" width="182" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scrollLeft=false" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQc-Rc-Doz">
+                                <rect key="frame" x="101" y="187" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COMPLETELY PROGRAMMATICALLY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkw-f7-8Xm">
+                                <rect key="frame" x="19" y="338" width="283" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3w-je-drn" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="132" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="KiT-so-R33"/>
+                                    <constraint firstAttribute="height" constant="30" id="WFF-VF-LSP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayAtStart">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayAtEnd">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="startOutOfBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkJ-8c-TJj" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="213" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4VP-hq-jaP"/>
+                                    <constraint firstAttribute="height" constant="30" id="cm4-Kj-CWc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayAtStart">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayAtEnd">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="startOutOfBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollLeft" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVr-ie-FCa" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="248" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lzf-EB-CEm"/>
+                                    <constraint firstAttribute="width" constant="200" id="mva-gD-aMY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayAtStart">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayAtEnd">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="startOutOfBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollLeft" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dV4-aN-y1z" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="283" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YAJ-TK-5md"/>
+                                    <constraint firstAttribute="width" constant="200" id="yMg-de-fiD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayAtStart">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delayAtEnd">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="startOutOfBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollLeft" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollOnlyWhenTooLong" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yve-h9-1Sq">
+                                <rect key="frame" x="113" y="399" width="95" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="reset programmatic"/>
+                                <connections>
+                                    <action selector="resetProgramaticAction:" destination="HsC-F0-Dnp" eventType="touchUpInside" id="eRN-VY-Efb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bVr-ie-FCa" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="0pe-8w-o8I"/>
+                            <constraint firstItem="dV4-aN-y1z" firstAttribute="top" secondItem="bVr-ie-FCa" secondAttribute="bottom" constant="5" id="46r-9o-HYq"/>
+                            <constraint firstItem="93x-fT-aDh" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="Dhi-V3-ZNk"/>
+                            <constraint firstItem="dkJ-8c-TJj" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="EIc-vf-GZw"/>
+                            <constraint firstItem="Y9c-7J-jxX" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="IBD-eM-n5D"/>
+                            <constraint firstItem="93x-fT-aDh" firstAttribute="top" secondItem="Y9c-7J-jxX" secondAttribute="bottom" constant="5" id="KLp-8J-fJM"/>
+                            <constraint firstItem="qQc-Rc-Doz" firstAttribute="top" secondItem="C3w-je-drn" secondAttribute="bottom" constant="25" id="NEf-dF-zhi"/>
+                            <constraint firstItem="yve-h9-1Sq" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="P4u-6U-GPU"/>
+                            <constraint firstItem="yve-h9-1Sq" firstAttribute="top" secondItem="dkw-f7-8Xm" secondAttribute="bottom" constant="40" id="RR2-S9-asg"/>
+                            <constraint firstItem="dkw-f7-8Xm" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="VUT-uO-xAJ"/>
+                            <constraint firstItem="dkw-f7-8Xm" firstAttribute="top" secondItem="dV4-aN-y1z" secondAttribute="bottom" constant="25" id="ZcM-6E-H1K"/>
+                            <constraint firstItem="qQc-Rc-Doz" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="ayV-QY-7Nf"/>
+                            <constraint firstItem="aNJ-Qi-d9m" firstAttribute="top" secondItem="93x-fT-aDh" secondAttribute="bottom" constant="25" id="h6e-2v-0gh"/>
+                            <constraint firstItem="aNJ-Qi-d9m" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="j2j-1m-Joj"/>
+                            <constraint firstItem="vGf-g4-L7e" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="kPD-1a-piy"/>
+                            <constraint firstItem="dV4-aN-y1z" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="mnU-af-bUY"/>
+                            <constraint firstItem="1sC-Yd-7Zp" firstAttribute="top" secondItem="vGf-g4-L7e" secondAttribute="bottom" constant="5" id="oDf-0z-D7O"/>
+                            <constraint firstItem="bVr-ie-FCa" firstAttribute="top" secondItem="dkJ-8c-TJj" secondAttribute="bottom" constant="5" id="pUc-XU-pbI"/>
+                            <constraint firstItem="C3w-je-drn" firstAttribute="top" secondItem="aNJ-Qi-d9m" secondAttribute="bottom" constant="5" id="pgw-lk-yE7"/>
+                            <constraint firstItem="C3w-je-drn" firstAttribute="centerX" secondItem="2fo-7N-5tc" secondAttribute="centerX" id="tP5-vM-qAw"/>
+                            <constraint firstItem="dkJ-8c-TJj" firstAttribute="top" secondItem="qQc-Rc-Doz" secondAttribute="bottom" constant="5" id="usa-Ac-APz"/>
+                            <constraint firstItem="Y9c-7J-jxX" firstAttribute="top" secondItem="dFY-RV-h8b" secondAttribute="bottom" constant="5" id="xkp-fF-aV3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Example 4" id="guE-6z-1Mq"/>
+                    <connections>
+                        <outlet property="completelyProgrammaticallyLabel" destination="dkw-f7-8Xm" id="Kop-aO-fKX"/>
+                        <outlet property="delay1" destination="93x-fT-aDh" id="80R-Mb-Xpt"/>
+                        <outlet property="resetProgrammatic" destination="yve-h9-1Sq" id="B00-O5-Q7f"/>
+                        <outlet property="scrollRight1" destination="dkJ-8c-TJj" id="PvK-ts-DkS"/>
+                        <outlet property="scrollRight2" destination="bVr-ie-FCa" id="Sb8-Y6-ziY"/>
+                        <outlet property="scrollRight3" destination="dV4-aN-y1z" id="92B-LO-ddV"/>
+                        <outlet property="startOut1" destination="C3w-je-drn" id="NbV-2S-NYR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eq-qJ-6NI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="15"/>
+        </scene>
+        <!--Example 5-->
+        <scene sceneID="Vfo-2X-c6A">
+            <objects>
+                <viewController id="QQd-6o-bgX" customClass="Example5VC" customModule="JHSideScrollTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cNt-dX-IOn"/>
+                        <viewControllerLayoutGuide type="bottom" id="YPF-gA-8hw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nUV-sG-F8B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8Q-ym-rSr">
+                                <rect key="frame" x="137" y="396" width="47" height="30"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startAction:" destination="QQd-6o-bgX" eventType="touchUpInside" id="6To-zG-SVX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repeatWhenOutOfBounds=false" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLp-s4-IoY">
+                                <rect key="frame" x="37" y="25" width="246" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repeatSpacing=100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngz-7h-Fw6">
+                                <rect key="frame" x="85" y="212" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAW-nP-UkC" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="51" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="reF-Jn-jJ6"/>
+                                    <constraint firstAttribute="height" constant="30" id="txq-MQ-GQ3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="repeatWhenOutOfBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBN-hr-ojY" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="86" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8L7-ZL-ei0"/>
+                                    <constraint firstAttribute="height" constant="30" id="uP2-sW-evv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="repeatWhenOutOfBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="startOutOfBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGx-3z-1DT" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="238" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9RM-j3-R49"/>
+                                    <constraint firstAttribute="height" constant="30" id="CGo-hv-f2G"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="repeatWhenOutOfBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="startOutOfBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="repeatSpacing">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWB-1D-79W" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="121" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="J4I-Sn-vso"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zx5-na-4ec"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="repeatWhenOutOfBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="startOutOfBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollLeft" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Uw-pm-47b" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="157" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="J6k-pS-YrK"/>
+                                    <constraint firstAttribute="width" constant="200" id="br4-k2-nFN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="repeatWhenOutOfBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="startOutOfBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scrollLeft" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repeatSpacing=5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCn-Ho-CEg">
+                                <rect key="frame" x="94" y="293" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaZ-7t-geb" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="319" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RuH-JI-gXv"/>
+                                    <constraint firstAttribute="width" constant="200" id="z3u-A7-pZr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="repeatWhenOutOfBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="startOutOfBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="repeatSpacing">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Uw-pm-47b" firstAttribute="centerX" secondItem="nUV-sG-F8B" secondAttribute="centerX" id="6Cl-W6-V5f"/>
+                            <constraint firstItem="Q8Q-ym-rSr" firstAttribute="centerX" secondItem="nUV-sG-F8B" secondAttribute="centerX" id="76Q-xw-6Cs"/>
+                            <constraint firstItem="SaZ-7t-geb" firstAttribute="top" secondItem="qCn-Ho-CEg" secondAttribute="bottom" constant="5" id="BhK-I6-nG8"/>
+                            <constraint firstItem="OWB-1D-79W" firstAttribute="centerX" secondItem="nUV-sG-F8B" secondAttribute="centerX" id="Esg-Mp-HIe"/>
+                            <constraint firstItem="SaZ-7t-geb" firstAttribute="centerX" secondItem="nUV-sG-F8B" secondAttribute="centerX" id="FSm-bg-qZS"/>
+                            <constraint firstItem="GAW-nP-UkC" firstAttribute="top" secondItem="XLp-s4-IoY" secondAttribute="bottom" constant="5" id="IJl-Hz-Uhq"/>
+                            <constraint firstItem="qCn-Ho-CEg" firstAttribute="centerX" secondItem="nUV-sG-F8B" secondAttribute="centerX" id="Jsf-VK-NBx"/>
+                            <constraint firstItem="XLp-s4-IoY" firstAttribute="centerX" secondItem="nUV-sG-F8B" secondAttribute="centerX" id="Sti-3o-wW5"/>
+                            <constraint firstItem="8Uw-pm-47b" firstAttribute="top" secondItem="OWB-1D-79W" secondAttribute="bottom" constant="6" id="Ucv-ib-nyc"/>
+                            <constraint firstItem="Ngz-7h-Fw6" firstAttribute="centerX" secondItem="nUV-sG-F8B" secondAttribute="centerX" id="ZPg-JB-SKP"/>
+                            <constraint firstItem="CBN-hr-ojY" firstAttribute="centerX" secondItem="nUV-sG-F8B" secondAttribute="centerX" id="aTC-ap-UYI"/>
+                            <constraint firstItem="GGx-3z-1DT" firstAttribute="top" secondItem="Ngz-7h-Fw6" secondAttribute="bottom" constant="5" id="ezt-S0-Fwv"/>
+                            <constraint firstItem="GAW-nP-UkC" firstAttribute="centerX" secondItem="nUV-sG-F8B" secondAttribute="centerX" id="f4e-Nm-ceU"/>
+                            <constraint firstItem="CBN-hr-ojY" firstAttribute="top" secondItem="GAW-nP-UkC" secondAttribute="bottom" constant="5" id="gfB-OZ-CHO"/>
+                            <constraint firstItem="XLp-s4-IoY" firstAttribute="top" secondItem="cNt-dX-IOn" secondAttribute="bottom" constant="5" id="hlf-Ir-Xjs"/>
+                            <constraint firstItem="Ngz-7h-Fw6" firstAttribute="top" secondItem="8Uw-pm-47b" secondAttribute="bottom" constant="25" id="oak-yP-lDv"/>
+                            <constraint firstItem="GGx-3z-1DT" firstAttribute="centerX" secondItem="nUV-sG-F8B" secondAttribute="centerX" id="rZ2-8A-pY0"/>
+                            <constraint firstItem="qCn-Ho-CEg" firstAttribute="top" secondItem="GGx-3z-1DT" secondAttribute="bottom" constant="25" id="uks-Ph-bBv"/>
+                            <constraint firstItem="YPF-gA-8hw" firstAttribute="top" secondItem="Q8Q-ym-rSr" secondAttribute="bottom" constant="5" id="xid-ee-KFO"/>
+                            <constraint firstItem="OWB-1D-79W" firstAttribute="top" secondItem="CBN-hr-ojY" secondAttribute="bottom" constant="5" id="yQ3-6W-wSx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Example 5" id="As9-Wy-I2w"/>
+                    <connections>
+                        <outlet property="repeatSpacing1" destination="GAW-nP-UkC" id="AD9-bI-7ef"/>
+                        <outlet property="repeatSpacing2" destination="CBN-hr-ojY" id="iL7-qE-OzF"/>
+                        <outlet property="repeatSpacing3" destination="OWB-1D-79W" id="Ofx-Co-ZNm"/>
+                        <outlet property="repeatSpacing4" destination="8Uw-pm-47b" id="jpj-Cx-LU5"/>
+                        <outlet property="repeatSpacing5" destination="GGx-3z-1DT" id="zSh-uJ-1nW"/>
+                        <outlet property="repeatSpacing6" destination="SaZ-7t-geb" id="8Dc-f1-wRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sAH-a8-NjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440" y="-324"/>
+        </scene>
+        <!--Example 1-->
+        <scene sceneID="zMy-PL-eFe">
+            <objects>
+                <viewController id="JnL-yh-qYG" customClass="Example1VC" customModule="JHSideScrollTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dGY-ha-hOh"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgn-h5-VoW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yOo-we-qy5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsV-Cl-L9m">
+                                <rect key="frame" x="158" y="72" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEFAULT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5q4-n2-Wj2">
+                                <rect key="frame" x="124" y="20" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUg-Fc-3J5">
+                                <rect key="frame" x="137" y="396" width="47" height="30"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startAction:" destination="JnL-yh-qYG" eventType="touchUpInside" id="62I-fW-17t"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfC-9J-OmY" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="46" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GeT-mB-yyG"/>
+                                    <constraint firstAttribute="width" constant="200" id="ShS-Ic-IFa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQt-L6-Z5D" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="81" width="200" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="j6t-hi-qmY"/>
+                                    <constraint firstAttribute="width" constant="200" id="qcS-V2-oiR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sz6-3W-AFl" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="136" width="200" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="SuR-F8-cIQ"/>
+                                    <constraint firstAttribute="height" constant="10" id="Y1h-i3-nUd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODb-er-Bb5" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="212" width="200" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aTz-Bd-Jc3"/>
+                                    <constraint firstAttribute="width" constant="200" id="y52-vr-yWk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xc-EX-Y1V" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="247" width="200" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="A8K-XM-oMj"/>
+                                    <constraint firstAttribute="height" constant="50" id="BtP-IU-Zy5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSs-Oo-a7v" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="302" width="200" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="44u-3T-kZQ"/>
+                                    <constraint firstAttribute="height" constant="10" id="aMG-zM-IDF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehN-8B-ixH" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="145" y="317" width="30" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Kx4-Ty-xwP"/>
+                                    <constraint firstAttribute="height" constant="70" id="g1t-B1-vhn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fontSizeAsView=true" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJU-Cv-Cm8">
+                                <rect key="frame" x="80.5" y="186" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0xc-EX-Y1V" firstAttribute="top" secondItem="ODb-er-Bb5" secondAttribute="bottom" constant="5" id="5rK-3P-raZ"/>
+                            <constraint firstItem="wQt-L6-Z5D" firstAttribute="top" secondItem="bfC-9J-OmY" secondAttribute="bottom" constant="5" id="6no-1w-arH"/>
+                            <constraint firstItem="NJU-Cv-Cm8" firstAttribute="centerX" secondItem="yOo-we-qy5" secondAttribute="centerX" id="82i-PE-S41"/>
+                            <constraint firstItem="ehN-8B-ixH" firstAttribute="centerX" secondItem="yOo-we-qy5" secondAttribute="centerX" id="EDj-Q4-1hG"/>
+                            <constraint firstItem="TSs-Oo-a7v" firstAttribute="top" secondItem="0xc-EX-Y1V" secondAttribute="bottom" constant="5" id="EPh-17-K9N"/>
+                            <constraint firstItem="eUg-Fc-3J5" firstAttribute="centerX" secondItem="yOo-we-qy5" secondAttribute="centerX" id="GTr-Ut-sfI"/>
+                            <constraint firstItem="bfC-9J-OmY" firstAttribute="top" secondItem="5q4-n2-Wj2" secondAttribute="bottom" constant="5" id="IKm-dE-J3G"/>
+                            <constraint firstItem="ODb-er-Bb5" firstAttribute="top" secondItem="NJU-Cv-Cm8" secondAttribute="bottom" constant="5" id="KMv-2p-RKm"/>
+                            <constraint firstItem="bfC-9J-OmY" firstAttribute="centerX" secondItem="yOo-we-qy5" secondAttribute="centerX" id="MXd-Xc-nU2"/>
+                            <constraint firstItem="wQt-L6-Z5D" firstAttribute="centerX" secondItem="yOo-we-qy5" secondAttribute="centerX" id="NZ3-mf-iCw"/>
+                            <constraint firstItem="wgn-h5-VoW" firstAttribute="top" secondItem="eUg-Fc-3J5" secondAttribute="bottom" constant="5" id="PHz-Uj-Ld4"/>
+                            <constraint firstItem="ehN-8B-ixH" firstAttribute="top" secondItem="TSs-Oo-a7v" secondAttribute="bottom" constant="5" id="SwI-rg-VKD"/>
+                            <constraint firstItem="5q4-n2-Wj2" firstAttribute="centerX" secondItem="yOo-we-qy5" secondAttribute="centerX" id="Umu-Rw-HNg"/>
+                            <constraint firstItem="TSs-Oo-a7v" firstAttribute="centerX" secondItem="yOo-we-qy5" secondAttribute="centerX" id="bTy-r5-Ngd"/>
+                            <constraint firstItem="5q4-n2-Wj2" firstAttribute="top" secondItem="dGY-ha-hOh" secondAttribute="bottom" id="jaW-D1-iqw"/>
+                            <constraint firstItem="sz6-3W-AFl" firstAttribute="top" secondItem="wQt-L6-Z5D" secondAttribute="bottom" constant="5" id="k2X-Ne-zaZ"/>
+                            <constraint firstItem="NJU-Cv-Cm8" firstAttribute="top" secondItem="sz6-3W-AFl" secondAttribute="bottom" constant="40" id="lR4-nm-ds2"/>
+                            <constraint firstItem="0xc-EX-Y1V" firstAttribute="centerX" secondItem="yOo-we-qy5" secondAttribute="centerX" id="pMj-cg-60k"/>
+                            <constraint firstItem="ODb-er-Bb5" firstAttribute="centerX" secondItem="yOo-we-qy5" secondAttribute="centerX" id="sw2-1t-DLG"/>
+                            <constraint firstItem="sz6-3W-AFl" firstAttribute="centerX" secondItem="yOo-we-qy5" secondAttribute="centerX" id="w7w-JO-fp2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Example 1" id="5cP-eO-NdU"/>
+                    <connections>
+                        <outlet property="def1" destination="bfC-9J-OmY" id="8SM-Ll-uH3"/>
+                        <outlet property="def2" destination="wQt-L6-Z5D" id="SrR-rN-vS9"/>
+                        <outlet property="def3" destination="sz6-3W-AFl" id="14d-HK-DTh"/>
+                        <outlet property="fsav1" destination="ODb-er-Bb5" id="iOQ-Nx-Cd2"/>
+                        <outlet property="fsav2" destination="0xc-EX-Y1V" id="Fg6-Cg-gdC"/>
+                        <outlet property="fsav3" destination="TSs-Oo-a7v" id="5eY-Pg-YL3"/>
+                        <outlet property="fsav4" destination="ehN-8B-ixH" id="Inv-zn-iak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61W-ZG-bJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.375" y="-661.25"/>
+        </scene>
+        <!--Example 3-->
+        <scene sceneID="52o-L8-8AV">
+            <objects>
+                <viewController id="Mg4-vW-VhI" customClass="Example3VC" customModule="JHSideScrollTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VTc-Kw-uP2"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDe-r5-y9X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qu9-l8-TFy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1l-Cs-kzl">
+                                <rect key="frame" x="137" y="396" width="47" height="30"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startAction:" destination="Mg4-vW-VhI" eventType="touchUpInside" id="Vce-gc-eHb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scrollRepeat=-1 (default)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7c-ZE-aab">
+                                <rect key="frame" x="65" y="25" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scrollRepeat=0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dR-LC-Uvj">
+                                <rect key="frame" x="102" y="86" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scrollRepeat=1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19S-kS-ice">
+                                <rect key="frame" x="103.5" y="147" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scrollRepeat=5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCP-Jy-Son">
+                                <rect key="frame" x="102" y="208" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yb-3S-drL" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="51" width="200" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PdI-aL-n07"/>
+                                    <constraint firstAttribute="height" constant="15" id="gUG-MY-YLU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRepeat">
+                                        <integer key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0h-Yr-twa" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="112" width="200" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="CWQ-Ku-Mca"/>
+                                    <constraint firstAttribute="height" constant="15" id="qmS-wV-eXH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRepeat">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPI-m9-reF" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="173" width="200" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="O0C-rT-XJc"/>
+                                    <constraint firstAttribute="width" constant="200" id="fom-hK-Iox"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRepeat">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEG-mo-HON" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="234" width="200" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3Ne-1e-xvK"/>
+                                    <constraint firstAttribute="height" constant="15" id="rVK-QA-v7J"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRepeat">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0J0-gr-6xL" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="295" width="200" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1cV-aN-dDd"/>
+                                    <constraint firstAttribute="height" constant="15" id="BtF-bt-1IA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRepeat">
+                                        <integer key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollTime">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWy-PA-SpH" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="110" y="315" width="100" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="1Lp-IP-K3g"/>
+                                    <constraint firstAttribute="width" constant="100" id="hxF-Ju-ai7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRepeat">
+                                        <integer key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollTime">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scrollTime=20 (seconds)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mF-eq-7Lh">
+                                <rect key="frame" x="64.5" y="269" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsK-1w-eQy" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="60" y="376" width="200" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="qAC-y5-4VL"/>
+                                    <constraint firstAttribute="height" constant="15" id="rt4-kU-CCj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRepeat">
+                                        <integer key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollTime">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollSpeed">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMS-Cl-yox" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="110" y="396" width="100" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Tjs-Nh-Ocf"/>
+                                    <constraint firstAttribute="height" constant="15" id="lp5-RM-NyJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRepeat">
+                                        <integer key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello World"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollTime">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollSpeed">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scrollSpeed=20 (pixelsPerSecond)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwI-pz-Lyf">
+                                <rect key="frame" x="28" y="350" width="264" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfA-E9-Peq" customClass="SideScrollTextField" customModule="JHSideScrollTextField" customModuleProvider="target">
+                                <rect key="frame" x="110" y="416" width="100" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="We3-XI-WjL"/>
+                                    <constraint firstAttribute="width" constant="100" id="aBv-um-3PN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollRepeat">
+                                        <integer key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="How Are You?"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollTime">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scrollSpeed">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fontSizeAsView" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0J0-gr-6xL" firstAttribute="top" secondItem="5mF-eq-7Lh" secondAttribute="bottom" constant="5" id="1kk-Lk-cW6"/>
+                            <constraint firstItem="GfA-E9-Peq" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="203-EO-u3L"/>
+                            <constraint firstItem="iDe-r5-y9X" firstAttribute="top" secondItem="A1l-Cs-kzl" secondAttribute="bottom" constant="5" id="2qq-b6-LVZ"/>
+                            <constraint firstItem="WMS-Cl-yox" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="4s2-vd-IsL"/>
+                            <constraint firstItem="0Yb-3S-drL" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="ATe-2t-W0I"/>
+                            <constraint firstItem="GWy-PA-SpH" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="EEZ-2P-FSs"/>
+                            <constraint firstItem="OPI-m9-reF" firstAttribute="top" secondItem="19S-kS-ice" secondAttribute="bottom" constant="5" id="H1E-oK-iav"/>
+                            <constraint firstItem="5mF-eq-7Lh" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="H5h-Nd-Vjx"/>
+                            <constraint firstItem="0J0-gr-6xL" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="Lxl-5a-4pu"/>
+                            <constraint firstItem="GWy-PA-SpH" firstAttribute="top" secondItem="0J0-gr-6xL" secondAttribute="bottom" constant="5" id="XxF-s6-zrC"/>
+                            <constraint firstItem="A1l-Cs-kzl" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="Yu5-Gv-QMH"/>
+                            <constraint firstItem="DsK-1w-eQy" firstAttribute="top" secondItem="GwI-pz-Lyf" secondAttribute="bottom" constant="5" id="Ywt-M2-yM2"/>
+                            <constraint firstItem="zEG-mo-HON" firstAttribute="top" secondItem="YCP-Jy-Son" secondAttribute="bottom" constant="5" id="bNZ-MR-kco"/>
+                            <constraint firstItem="GwI-pz-Lyf" firstAttribute="top" secondItem="GWy-PA-SpH" secondAttribute="bottom" constant="20" id="d4P-qJ-QZu"/>
+                            <constraint firstItem="YCP-Jy-Son" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="dpe-NE-9YL"/>
+                            <constraint firstItem="0Yb-3S-drL" firstAttribute="top" secondItem="s7c-ZE-aab" secondAttribute="bottom" constant="5" id="f9I-aS-fsY"/>
+                            <constraint firstItem="zEG-mo-HON" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="fxF-IG-og3"/>
+                            <constraint firstItem="19S-kS-ice" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="g2u-BJ-HK8"/>
+                            <constraint firstItem="DsK-1w-eQy" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="g6M-80-nUg"/>
+                            <constraint firstItem="4dR-LC-Uvj" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="gDc-js-kS8"/>
+                            <constraint firstItem="5mF-eq-7Lh" firstAttribute="top" secondItem="zEG-mo-HON" secondAttribute="bottom" constant="20" id="hAB-pB-TPa"/>
+                            <constraint firstItem="OPI-m9-reF" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="nIQ-Cr-mLL"/>
+                            <constraint firstItem="GfA-E9-Peq" firstAttribute="top" secondItem="WMS-Cl-yox" secondAttribute="bottom" constant="5" id="oad-NC-Ztv"/>
+                            <constraint firstItem="19S-kS-ice" firstAttribute="top" secondItem="e0h-Yr-twa" secondAttribute="bottom" constant="20" id="oxg-Av-f6U"/>
+                            <constraint firstItem="4dR-LC-Uvj" firstAttribute="top" secondItem="0Yb-3S-drL" secondAttribute="bottom" constant="20" id="pUr-xd-Zsj"/>
+                            <constraint firstItem="e0h-Yr-twa" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="s1c-AZ-tsm"/>
+                            <constraint firstItem="e0h-Yr-twa" firstAttribute="top" secondItem="4dR-LC-Uvj" secondAttribute="bottom" constant="5" id="wO0-74-nZW"/>
+                            <constraint firstItem="s7c-ZE-aab" firstAttribute="top" secondItem="VTc-Kw-uP2" secondAttribute="bottom" constant="5" id="wqp-DB-WXa"/>
+                            <constraint firstItem="WMS-Cl-yox" firstAttribute="top" secondItem="DsK-1w-eQy" secondAttribute="bottom" constant="5" id="wxq-MS-XoP"/>
+                            <constraint firstItem="YCP-Jy-Son" firstAttribute="top" secondItem="OPI-m9-reF" secondAttribute="bottom" constant="20" id="xdV-lX-CRs"/>
+                            <constraint firstItem="s7c-ZE-aab" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="xpI-GO-Phx"/>
+                            <constraint firstItem="GwI-pz-Lyf" firstAttribute="centerX" secondItem="Qu9-l8-TFy" secondAttribute="centerX" id="yrf-mN-M5U"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Example 3" id="IKY-u2-6RF"/>
+                    <connections>
+                        <outlet property="repeat0" destination="e0h-Yr-twa" id="Jet-yh-cIq"/>
+                        <outlet property="repeat1" destination="OPI-m9-reF" id="fzh-cc-maG"/>
+                        <outlet property="repeat5" destination="zEG-mo-HON" id="uvB-oP-YCk"/>
+                        <outlet property="repeatDefault" destination="0Yb-3S-drL" id="RhG-dI-epJ"/>
+                        <outlet property="scrollSpeed1" destination="DsK-1w-eQy" id="cr0-xJ-deF"/>
+                        <outlet property="scrollSpeed2" destination="WMS-Cl-yox" id="lqz-il-C4K"/>
+                        <outlet property="scrollSpeed3" destination="GfA-E9-Peq" id="mnC-DX-vVT"/>
+                        <outlet property="scrollTime1" destination="0J0-gr-6xL" id="S9w-6p-FhR"/>
+                        <outlet property="scrollTime2" destination="GWy-PA-SpH" id="St3-Yi-FIm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eH4-kr-jQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="-661"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lP0-g9-4nF">
+            <objects>
+                <tabBarController id="ei7-Cl-pHm" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="jzu-eL-Md0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JnL-yh-qYG" kind="relationship" relationship="viewControllers" id="TQf-Mn-gAF"/>
+                        <segue destination="Dxd-d7-s4D" kind="relationship" relationship="viewControllers" id="VTr-zd-lrc"/>
+                        <segue destination="Mg4-vW-VhI" kind="relationship" relationship="viewControllers" id="KS2-1I-3jp"/>
+                        <segue destination="HsC-F0-Dnp" kind="relationship" relationship="viewControllers" id="fyD-Vl-bw3"/>
+                        <segue destination="QQd-6o-bgX" kind="relationship" relationship="viewControllers" id="ad2-H7-ZuH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCe-Ix-HcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-986" y="-323"/>
+        </scene>
+    </scenes>
+</document>
