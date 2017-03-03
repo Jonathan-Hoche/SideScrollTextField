@@ -2,12 +2,12 @@
 ## A Swift UIView class that offers a UITextField with customizable side scrolling text.
 
 * Quick Start:
-- Add the SideScrollTextField.swift file to your project.
-- Add the PlaceIn.swift and PlaceOn.swift files to your project.
-- Add a View in the storyboard and in the Identity inspector set it's Class to SideScrollTextField
-- In Attributes inspector type some text.
-- Add an outlet of the View to the appropriate ViewController
-- In viewDidLoad type (replace "scroller" with your outlet name): 
+    - Add the SideScrollTextField.swift file to your project.
+    - Add the PlaceIn.swift and PlaceOn.swift files to your project.
+    - Add a View in the storyboard and in the Identity inspector set it's Class to SideScrollTextField
+    - In Attributes inspector type some text.
+    - Add an outlet of the View to the appropriate ViewController
+    - In viewDidLoad type (replace "scroller" with your outlet name): 
 ~~~~ 
 scroller.startScroll()
 // NOTE: before starting again call...
@@ -28,9 +28,9 @@ scroller.stopScroll()
 
 These are the available @IBInspectable properties (read the comments to learn how they affect each other and the final scroll):
 ~~~~
-var text: String = "" //FIRST OF ALL!!! You must set the text in the storyboard or programmatically. The didSet observer will get called and initilize the view correctly and add the textField as a subview.
+var text: String = "" //FIRST OF ALL!!! You must set text (NOT the textField.text) in the storyboard or programmatically. The didSet observer for text will get called and initilize the view correctly and add the textField as a subview.
 
-var fontSizeAsView: Bool = false // true wiil ignore fontSizes and make the font size as big as the view (it's superview)
+var fontSizeAsView: Bool = false // true wiil ignore fontSizes and make the font size as big as the view (its superview)
 
 var fontSize: CGFloat = 17.0 // initial font size. will be ignored at runtime if maxFontSize OR minFontSize are bigger than 0. OR if fontSizeAsView = true
 

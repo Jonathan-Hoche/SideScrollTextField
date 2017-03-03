@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+                           ///// UITextFieldDelegate HERE FOR programaticScroller /////
 class Example4VC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var delay1: SideScrollTextField!
@@ -41,22 +41,25 @@ class Example4VC: UIViewController, UITextFieldDelegate {
         
         programaticScroller.textField.font = UIFont(name: "Helvetica-Bold", size: 24)
         
-        programaticScroller.text = "" //change text like this! NOT with textField.text!
-        //programaticScroller.fontSizeAsView = true
-        programaticScroller.fontSize = 24
-        programaticScroller.maxFontSize = 17
-        programaticScroller.maxFontSize = 9
+        // !!! @IBInspectable properties
+        programaticScroller.text = "" //change the text like this! (NOT with programaticScroller.textField.text)
+        programaticScroller.fontSizeAsView = false //if true will override fontSize, maxFontSize and minFontSize
+        programaticScroller.fontSize = 17
+        programaticScroller.maxFontSize = 17 // if maxFontSize > minFontSize (and both are bigger than 0) they will try to...
+        programaticScroller.minFontSize = 9 //  resize (shrink) to fit the view as much as possible within these boundaries
         programaticScroller.scrollLeft = true
         programaticScroller.scrollOnlyWhenTooLong = false
         programaticScroller.scrollRepeat = -1 //contiues repeat
-        programaticScroller.scrollTime = 0
+        programaticScroller.scrollTime = 0 // if bigger than 0 will override scrollSpeed
         programaticScroller.scrollSpeed = 50 // pixels a second
         programaticScroller.repeatWhenOutOfBounds = true
         programaticScroller.repeatSpacing = 0 // ignored while repeatWhenOutOfBounds=true
         programaticScroller.delayAtStart = 3
         programaticScroller.delayAtEnd = 0
         programaticScroller.startOutOfBounds = false
+        // !!!
         
+        //other properties
         programaticScroller.layer.borderWidth = 3
         programaticScroller.layer.cornerRadius = 15
         programaticScroller.layer.borderColor = UIColor.green.cgColor
@@ -67,16 +70,14 @@ class Example4VC: UIViewController, UITextFieldDelegate {
         
         programaticScroller.textField.isEnabled = true // default is false and should remain unless you need the user to edit
         programaticScroller.textField.textColor = .red
-        programaticScroller.textField.placeholder = "Enter Your Own Message Here"
+        programaticScroller.textField.placeholder = "Enter Message..." //CAREFUL: startScroll() wil size to fit to the placeholder text if it is longer than the text... set it back to "" before startScroll()
         programaticScroller.textField.backgroundColor = .white
         programaticScroller.textField.keyboardType = .alphabet
         programaticScroller.textField.autocorrectionType = .no
         programaticScroller.textField.returnKeyType = .done
         programaticScroller.textField.delegate = self
-        
         ///// programaticScroller /////
     }
-    
     
     @IBAction func startAction(_ sender: UIButton) {
         
@@ -88,6 +89,7 @@ class Example4VC: UIViewController, UITextFieldDelegate {
             scrollRight3.startScroll()
             
             ///// programaticScroller /////
+            programaticScroller.textField.placeholder = "" //otherwise it will sizeToFit to the length of the placeholder
             programaticScroller.startScroll()
             ///// programaticScroller /////
             
@@ -110,11 +112,10 @@ class Example4VC: UIViewController, UITextFieldDelegate {
             
             sender.setTitle("START", for: .normal)
         }
-        
     }
 
+    ///// HERE FOR programaticScroller /////
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-       // self.endEditing(true)
         programaticScroller.textField.resignFirstResponder()
         return false
     }
@@ -122,22 +123,19 @@ class Example4VC: UIViewController, UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         func animateFunc(){
             programaticScroller.placeInCenterOfSuperView()
-            
             //refresh constraints
-            //self.contextView.layoutSubviews()
+            //programaticScroller.layoutSubviews()
         }
         UIView.animate(withDuration: 0.4, delay: 0, options: .curveLinear, animations: animateFunc, completion: nil)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        programaticScroller.textField.sizeToFit()
-        programaticScroller.textField.placeInCenterOfSuperView()
-        programaticScroller.textField.placeInLeftOfSuperView(offset: 5)
         func animateFunc(){
             programaticScroller.placeOnBottom(of: completelyProgrammaticallyLabel, offset: 5)
             //refresh constraints
-            //self.contextView.layoutSubviews()
+            //programaticScroller.layoutSubviews()
         }
         UIView.animate(withDuration: 0.4, delay: 0, options: .curveLinear, animations: animateFunc, completion: nil)
     }
+    ///// HERE FOR programaticScroller /////
 }

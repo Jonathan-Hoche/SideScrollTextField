@@ -8,6 +8,8 @@
 
 import UIKit
 
+//SideScrollTextField
+//A Swift UIView class that offers a UITextField with customizable side scrolling text.
 @IBDesignable
 class SideScrollTextField: UIView {
     
@@ -51,7 +53,7 @@ class SideScrollTextField: UIView {
     let textField: UITextField = UITextField(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
     
     
-    //FIRST OF ALL!!! You must set the text in the storyboard or programmatically. The didSet observer will get called and initilize the view correctly and add the textField as a subview.
+    //FIRST OF ALL!!! You must set text (NOT the textField.text) in the storyboard or programmatically. The didSet observer for text will get called and initilize the view correctly and add the textField as a subview.
     @IBInspectable
      var text: String = "" {
         didSet
@@ -80,7 +82,7 @@ class SideScrollTextField: UIView {
     }
     
     @IBInspectable
-    var fontSizeAsView: Bool = false // true wiil ignore fontSizes and make the font size as big as the view (it's superview)
+    var fontSizeAsView: Bool = false // true wiil ignore fontSizes and make the font size as big as the view (its superview)
     
     @IBInspectable
     var fontSize: CGFloat = 17.0 {
@@ -242,7 +244,6 @@ class SideScrollTextField: UIView {
             isScrolling = true
             scroll()
         }
-        
     }
     
     //MARK: - Animations
@@ -269,11 +270,12 @@ class SideScrollTextField: UIView {
             let pixelsToTravelAtStart = Double(textField.bounds.width + (innerWidthBoundsSpace / 2))
             let pixelsStartPercentage = 100 / (pixelsToTravelWholeRepeat / pixelsToTravelAtStart)
             let beginingDurationTime = startOutOfBounds ? wholeTime : (pixelsStartPercentage * wholeTime) / 100
-            //for a whole animation (out to out) of a 100width View, text that is 120width takes 220pixels...
-            //the start animation is 120pixels + innerWidthBoundsSpace/2 = 125...
-            //the pixels percentage of the start animation is  100% / (220/125) = 56.8181818182%...
-            //56.8181818182% of 20seconds is (56.8181818182 * 20) / 100 = 11.3636363636
-            
+            /*
+            A whole animation (out to out) of a 100width View, and text that is 120width will be be 220pixels...
+            (if startOutOfBounds=false) The start animation is 120pixels + innerWidthBoundsSpace/2 = 125pixelse...
+            The start pixels percentage out of the whole animation is 100% / (220/125) = 56.8181818182%...
+            56.8181818182% of 20seconds is (56.8181818182 * 20) / 100 = 11.3636363636 seconds
+                */
             
             let durationTime = isFirstScroll ? beginingDurationTime : wholeTime
             
@@ -283,9 +285,8 @@ class SideScrollTextField: UIView {
             print("for scrollLeft=\(scrollLeft)... startOutOfBounds=\(startOutOfBounds):")
             print("durationTime: \(durationTime)")
             print("")
-            */
+                */
             
-                
             UIView.animate(withDuration: durationTime, delay: delayTime , options: [.curveLinear], animations: {
                 if self.scrollLeft {
                     self.textField.placeInLeftOfSuperView(offset: -self.textField.frame.width)
@@ -327,10 +328,12 @@ class SideScrollTextField: UIView {
             
             let pixelsToTravelAtStart = Double(textField.bounds.width + (innerWidthBoundsSpace / 2))
             let pixelsStartPercentage: Double = 100 / (pixelsToTravelWholeRepeat / pixelsToTravelAtStart)
-            //for a whole animation (out to out) of a 100width View, text that is 120width = 220pixels...
-            //the start animation is 120pixels + innerWidthBoundsSpace/2 = 125...
-            //the pixels percentage of the start animation is  100% / (220/125) = 56.8181818182%...
-            //56.8181818182% of 20seconds is (56.8181818182 * 20) / 100 = 11.3636363636
+            /*
+             A whole animation (out to out) of a 100width View, and text that is 120width will be be 220pixels...
+             (if startOutOfBounds=false) The start animation is 120pixels + innerWidthBoundsSpace/2 = 125pixelse...
+             The start pixels percentage out of the whole animation is 100% / (220/125) = 56.8181818182%...
+             56.8181818182% of 20seconds is (56.8181818182 * 20) / 100 = 11.3636363636 seconds
+             */
             
             
             let slightPixelsRemainingFix:Double = scrollLeft ? 100 : 15 //light adjustments for scrolling left or right
@@ -345,17 +348,18 @@ class SideScrollTextField: UIView {
              //to move an extra 10width (space) will take...
              //100 / 20 = 4pixels per second...
              //10 / 4 =  2.5seconds
-             */
+                */
             
             let beginingDurationTime = startOutOfBounds ? wholeTime : (pixelsStartPercentage * wholeTime) / 100
             
             /*
+            print("\(text)")
             print("isFirstScroll=\(isFirstScroll)")
             print("for scrollLeft=\(scrollLeft)... startOutOfBounds=\(startOutOfBounds):")
             print("WholeTime: \(wholeTime) beginingTime: \(beginingDurationTime) remainingTime: \(remainingDurationTime)")
             print("\(beginingDurationTime) + \(remainingDurationTime) = \(beginingDurationTime + remainingDurationTime)")
             print("")
-             */
+                */
             
             UIView.animate(withDuration: beginingDurationTime, delay: delayTime , options: [.curveLinear], animations: {
                 if self.scrollLeft {
@@ -367,7 +371,6 @@ class SideScrollTextField: UIView {
                 }
             }) { (completion) in
                 //END
-                
                 UIView.animate(withDuration: remainingDurationTime, delay: 0, options: [.curveLinear], animations: {
                     if self.scrollLeft {
                         self.duplicateTextField.placeInLeftOfSuperView(offset: (self.innerWidthBoundsSpace / 2))
@@ -399,7 +402,6 @@ class SideScrollTextField: UIView {
                     }
                 }
             }
-            
         }
     }
     
@@ -434,8 +436,6 @@ class SideScrollTextField: UIView {
         // Drawing code
     }
     */
-    
-    
 }
 
 extension UITextField {
