@@ -61,7 +61,7 @@ var delayAtEnd: Double = 0 // delay in seconds when each cycle ends (ignored if 
 var startOutOfBounds: Bool = false // animation starts with the text out of bounds (text will be out of bounds even before start scroliing)
 ~~~~
 ### Note: SideScrollTextField class uses PlaceIn.swift and PlaceOn.swift files (UIView extensions)
-* [placeIn-PlaceOn] - A group of Swift UIView extensions that simplify positioning a UIView within or around another UIView such as UILabel, UIButton etc...
+* [placeIn-PlaceOn] - A group of Swift UIView extensions that simplify frame-based positioning a UIView within or around another UIView such as UILabel, UIButton etc...
 
 The SideScrollTextField.swift file and PlaceIn.swift and PlaceOn.swift files are provided alongside an Xcode project with some interesting examples. Any feedback is welcome.
 Check out Example 4 (Example4VC) in the Xcode project that uses the class completely programmatically and customizes the text field and the view borders as well as enabling the the text field for custom texts by user.
